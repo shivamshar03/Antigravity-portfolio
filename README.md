@@ -44,4 +44,3 @@ Welcome to the **Antigravity Portfolio**! This is a modern, dynamic, AI-themed p
 - **GitHub**: [shivamshar03](https://github.com/shivamshar03)
 
 ---
-*Built with ❤️ and React.*
