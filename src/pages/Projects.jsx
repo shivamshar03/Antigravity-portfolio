@@ -1,5 +1,11 @@
 import ProjectCard from '../components/ProjectCard';
 import { Github } from 'lucide-react';
+import anaya3Img from '../assets/projects/anaya3.png';
+import autoformxImg from '../assets/projects/autoformx.png';
+import chatAppImg from '../assets/projects/chat_app.png';
+import dataAnalysisImg from '../assets/projects/data_analysis.png';
+import emailImg from '../assets/projects/email.png';
+import sketchImg from '../assets/projects/sketch.png';
 import './Projects.css';
 
 const Projects = () => {
@@ -8,37 +14,43 @@ const Projects = () => {
       title: "Anaya3 - Personal AI Assistant",
       description: "Multimodal AI assistant capable of understanding emotions from voice and facial expressions. Uses advanced NLP with LLMs, speech/facial emotion recognition, and generates human-like responses.",
       tags: ["Python", "OpenCV", "LLMs", "NLP", "FastAPI"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: anaya3Img
     },
     {
       title: "AutoFormX - Smart Form Automation",
       description: "Automated dynamic web form filling with adaptive fuzzy matching, XPath detection, and error handling for complex workflows.",
       tags: ["Python", "Selenium", "Fuzzy Matching"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: autoformxImg
     },
     {
       title: "Chat Application with Python Sockets",
       description: "Developed a real-time messaging system with socket programming, user authentication, and chat rooms.",
       tags: ["Python", "Sockets", "FastAPI"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: chatAppImg
     },
     {
       title: "Data Analysis Assistant",
       description: "Built a Python-based dashboard to analyze and visualize data from CSV/Excel files with filtering and search.",
       tags: ["Python", "Pandas", "Streamlit"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: dataAnalysisImg
     },
     {
       title: "Email Generator",
       description: "A tool that automates the creation of professional emails using predefined templates and user inputs, enhancing productivity.",
       tags: ["Python", "Automation", "NLP"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: emailImg
     },
     {
       title: "Sketch Filter",
       description: "Applies artistic sketch filters to images, transforming photos into pencil sketch-like artworks using computer vision techniques.",
       tags: ["Computer Vision", "Python", "OpenCV"],
-      githubLink: "https://github.com/shivamshar03"
+      githubLink: "https://github.com/shivamshar03",
+      image: sketchImg
     }
   ];
 
@@ -62,6 +74,7 @@ const Projects = () => {
             description={proj.description}
             tags={proj.tags}
             githubLink={proj.githubLink}
+            image={proj.image}
           />
         ))}
       </div>

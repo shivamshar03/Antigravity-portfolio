@@ -1,4 +1,5 @@
-import { Terminal, Database, Shield, Cpu } from 'lucide-react';
+import { Terminal, Database, Shield, Cpu, FileText } from 'lucide-react';
+import resumeThumb from '../assets/resume_thumb.png';
 import './About.css';
 
 const About = () => {
@@ -101,6 +102,16 @@ const About = () => {
                <li><strong>Founder & President</strong>, Abhyudaya Coding Club – Mentored 200+ students.</li>
                <li><strong>Campus Ambassador</strong>, Technex, IIT (BHU) Varanasi.</li>
              </ul>
+          </div>
+
+          <div className="education-box glass-panel mt-2 text-center">
+             <h2><FileText size={24} className="heading-icon" /> Professional Resume</h2>
+             <a href="/Shivam_Sharma.pdf" target="_blank" rel="noopener noreferrer" className="resume-thumbnail-link">
+               <div className="resume-thumbnail-wrapper">
+                 <img src={resumeThumb} alt="Resume Preview" className="resume-thumbnail" />
+                 <div className="resume-overlay">View PDF</div>
+               </div>
+             </a>
           </div>
         </div>
       </div>

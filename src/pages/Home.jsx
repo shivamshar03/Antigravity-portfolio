@@ -2,6 +2,9 @@ import { ArrowRight, Code, Database, BrainCircuit, Smartphone, Globe, Monitor } 
 import { Link } from 'react-router-dom';
 import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
+import profileImg from '../assets/profile.png';
+import anaya3Img from '../assets/projects/anaya3.png';
+import autoformxImg from '../assets/projects/autoformx.png';
 import './Home.css';
 
 const Home = () => {
@@ -25,12 +28,8 @@ const Home = () => {
         </div>
         
         <div className="hero-visual animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          <div className="glass-panel abstract-sphere">
-            {/* Visual representation of an AI node */}
-            <div className="core"></div>
-            <div className="orbit orbit-1"></div>
-            <div className="orbit orbit-2"></div>
-            <div className="orbit orbit-3"></div>
+          <div className="profile-image-container glass-panel">
+            <img src={profileImg} alt="Shivam Sharma" className="profile-image" />
           </div>
         </div>
       </section>
@@ -73,11 +72,13 @@ const Home = () => {
             title="Anaya3 - AI Assistant"
             description="Multimodal AI assistant capable of understanding emotions from voice and facial expressions using LLMs and computer vision."
             tags={['Python', 'LLM', 'OpenCV', 'FastAPI']}
+            image={anaya3Img}
           />
           <ProjectCard 
             title="AutoFormX"
             description="Smart Form Automation with adaptive fuzzy matching, XPath detection, and error handling."
             tags={['Python', 'Selenium', 'Fuzzy Matching']}
+            image={autoformxImg}
           />
         </div>
       </section>
