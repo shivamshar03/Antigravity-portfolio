@@ -29,11 +29,16 @@ Welcome to the **Antigravity Portfolio**! This is a modern, dynamic, AI-themed p
    cd Antigravity-portfolio
    npm install
    ```
-3. **Start the development server**:
+3. **Set up Environment Variables**:
+   Create a `.env` file in the root directory and add your Groq API Key to enable the AI Chatbot functionality:
+   ```env
+   VITE_GROQ_API_KEY=your_actual_groq_api_key_here
+   ```
+4. **Start the development server**:
    ```bash
    npm run dev
    ```
-4. **Build for production**:
+5. **Build for production**:
    ```bash
    npm run build
    ```

@@ -6,6 +6,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import FloatingChatbot from './components/FloatingChatbot';
 import './App.css';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <FloatingChatbot />
       </div>
     </Router>
   );
