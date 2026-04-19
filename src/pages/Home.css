@@ -145,3 +145,41 @@
     height: 280px;
   }
 }
+
+.testimonials-section {
+  padding-bottom: 6rem;
+}
+
+.testimonial-card {
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-mark {
+  font-size: 5rem;
+  line-height: 1;
+  color: var(--accent-cyan);
+  opacity: 0.2;
+  position: absolute;
+  top: -1rem;
+  left: 2rem;
+  font-family: 'Space Grotesk', serif;
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  font-size: 1.1rem;
+  font-weight: 600;
+}

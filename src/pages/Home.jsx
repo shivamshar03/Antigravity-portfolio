@@ -19,7 +19,7 @@ const Home = () => {
             AI/ML Developer & Consultant
           </h1>
           <p className="hero-subtitle">
-            I build elegant, intelligent solutions scaling from web & mobile to deep tech AI. Passionate about AI integrations, ERP/CRM solutions, and next-gen applications.
+            Passionate software developer creating elegant solutions. Continuous learner, code craftsman, and open source enthusiast. Building tomorrow's technology today with AI/ML.
           </p>
           <div className="hero-actions">
             <Link to="/projects" className="btn-primary">View My Work</Link>
@@ -80,6 +80,17 @@ const Home = () => {
             tags={['Python', 'Selenium', 'Fuzzy Matching']}
             image={autoformxImg}
           />
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="testimonials-section container animate-fade-in" style={{ animationDelay: '0.4s' }}>
+        <div className="testimonial-card glass-panel">
+          <div className="quote-mark">"</div>
+          <p className="testimonial-text">
+            Working with Shivam was a fantastic experience. His attention to detail and innovative thinking brought our project to life!
+          </p>
+          <div className="testimonial-author text-gradient">— Client Feedback</div>
         </div>
       </section>
     </div>
